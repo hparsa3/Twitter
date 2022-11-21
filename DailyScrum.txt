@@ -303,7 +303,7 @@
 
 1. Done / not done since last scrum:
 
-	- Changed Navbar and input a bit 
+	- Changed Navbar and input a bit, deployed to Vercel
 2. To do until next Scrum:
 	- Adding Delete to the post component
 
