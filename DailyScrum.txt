@@ -258,3 +258,65 @@
 
 3. Need assistance / figure things out
 
+21-Nov-2022 
+****************************
+ Amir
+
+1. Done / not done since last scrum:
+
+	- Deployed on Vercel
+
+2. To do until next Scrum:
+	- Getting Firebase up and running
+
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Ilnaz 
+
+1. Done / not done since last scrum:
+
+	-  Added widgets section and random users
+
+2. To do until next Scrum:
+	- Adding animaton user framer motion
+
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Kristy 
+
+1. Done / not done since last scrum:
+
+	- Still need to finish off input  
+
+2. To do until next Scrum:
+	- Try and add signin
+ 
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Hossein 
+
+1. Done / not done since last scrum:
+
+	- Changed Navbar and input a bit 
+2. To do until next Scrum:
+	- Adding Delete to the post component
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Edgar
+
+1. Done / not done since last scrum:
+
+	- finished search
+2. To do until next Scrum:
+	- still working on setting up auth and firebase
+	
+
+3. Need assistance / figure things out
