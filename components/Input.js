@@ -1,7 +1,14 @@
 import {EmojiHappyIcon, PhotographIcon } from "@heroicons/react/outline";
+import { useSession, signOut } from "next-auth/react";
 
 export default function Input() {
+    const {data: session} = useSession();
+    console.log(session);
     return (
+        <>
+        {session &&(
+    
+        
         <div className="flex  border-b border-gray-200 p-3 space-x-3">
             <img
                 src= "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg"
@@ -29,5 +36,7 @@ export default function Input() {
                 </div>
             </div>
         </div>
+  )}
+  </>
   )
 }
