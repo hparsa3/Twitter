@@ -9,7 +9,9 @@ import { ClipboardIcon } from "@heroicons/react/outline";
 import { UserIcon } from "@heroicons/react/outline";
 import { DotsCircleHorizontalIcon } from "@heroicons/react/outline";
 import { DotsHorizontalIcon } from "@heroicons/react/outline";
+import { useSession } from "next-auth/react";
 
+const { data: session } = useSession();
 export default function Sidebar() {
   return (
     <div className="hidden sm:flex flex-col p-2 xl:items-start fixed h-full">
@@ -26,6 +28,8 @@ export default function Sidebar() {
       <div className="mt-4 mb-2.5 xl:items-start">
         <SidebarMenuItem text="Home" Icon={HomeIcon} active />
         <SidebarMenuItem text="Explore" Icon={HashtagIcon} />
+        {session && (
+          <>
         <SidebarMenuItem text="Notification" Icon={BellIcon} />
         <SidebarMenuItem text="Messages" Icon={InboxIcon} />
         <SidebarMenuItem text="Bookmark" Icon={BookmarkIcon} />
@@ -33,9 +37,13 @@ export default function Sidebar() {
         <SidebarMenuItem text="Profile" Icon={HomeIcon} />
         <SidebarMenuItem text="Home" Icon={UserIcon} />
         <SidebarMenuItem text="More" Icon={DotsCircleHorizontalIcon} />
+        </>
+        )}
       </div>
 
       {/*Button*/}
+      {session && (
+        <>
       <button className="bg-blue-400 text-white rounded-full w-56 h-12 font-bold shadow-md hover:brightness-95 text-lg  hidden xl:inline">
         Tweet
       </button>
@@ -52,8 +60,20 @@ export default function Sidebar() {
           <p className="text-gray-500">@elonmask </p>
          
         </div>
-         <DotsHorizontalIcon className="h-5 xl:ml-8 hidden xl:inline" />
-      </div>
-    </div>
-  );
+        <DotsHorizontalIcon className="h-5 xl:ml-8 hidden xl:inline" />
+
+</div>
+
+</>
+
+)} : {(
+
+<button className="bg-blue-400 text-white rounded-full w-36 h-12 font-bold shadow-md hover:brightness-95 text-lg hidden xl:inline">Sign In</button>
+
+)}
+
+</div>
+
+);
+
 }
