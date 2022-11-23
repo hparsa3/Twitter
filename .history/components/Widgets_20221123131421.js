@@ -1,4 +1,4 @@
-import { SearchIcon } from "@heroicons/react/outline";
+import { SearchIcon } from "@heroicons/react/solid";
 import { useState } from "react";
 import News from "./News";
 export default function Widgets(newsResults,randomUsersResults) {

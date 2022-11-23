@@ -34,7 +34,17 @@ export default function Home({newsResults, randomUsersResults}:any) {
       </main>
      
 
-    
+      <main className="flex min-h-screen max-w-7xl mx-auto ">
+        {/*Sidebar*/}
+        <Sidebar />
+        {/* Feed */}
+        <Feed />
+        {/* Widget */}
+        <Widgets
+          newsResults={newsResults.articles}
+        
+        />
+      </main>
     </div>
   );
 }

@@ -1,6 +1,6 @@
-import { SearchIcon } from "@heroicons/react/outline";
+import { SearchIcon } from "@heroicons/react/solid";
 import { useState } from "react";
-import News from "./News";
+import news
 export default function Widgets(newsResults,randomUsersResults) {
   const [articleNum, setArticleNum] = useState(3);
   const [randomUserNum, setRandomUserNum] = useState(3);
@@ -14,7 +14,7 @@ export default function Widgets(newsResults,randomUsersResults) {
       </div>
       <div className="text-gray-700 space-y-3 bg-gray-100 rounded-xl pt-2 w-[90%] xl:w-[75%]">
       <h4 className="font-bold text-xl px-4">Whats happening</h4>
-      {newsResults.slice(0, articleNum).map((article)=>(      
+      {newsResults.slice(0, articleNum).map((article)=>(
        <News key={article.title} article={article} />
       ))}
       <button onClick={() => setArticleNum(articleNum + 3)}
