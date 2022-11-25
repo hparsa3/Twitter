@@ -399,3 +399,72 @@ Amir
 
 3. Need assistance / figure things out
 
+
+
+25-Nov-2022 
+************************************************************************************
+Amir
+
+1. Done / not done since last scrum:
+
+- recoil package install 
+
+
+2. To do until next Scrum:
+
+ - Still working on impliement recoil and adjust with the project 
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Ilnaz 
+
+1. Done / not done since last scrum:
+
+-  Watched some  react model toutorials and installed the package
+
+2. To do until next Scrum:
+	
+-Start impliementing react model with project
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Kristy 
+
+1. Done / not done since last scrum:
+
+- Checking fire store and geting post data
+
+2. To do until next Scrum:
+	
+ -Update backend to add some constraint
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Hossein 
+
+1. Done / not done since last scrum:
+
+- Start working on the profile page 
+
+2. To do until next Scrum:
+
+- Finding out how to prevent user to upload file rather than image
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Edgar
+
+1. Done / not done since last scrum:
+
+- watched some toutorials for rols and components
+
+2. To do until next Scrum:
+
+-Working on match comment with orginal post
+
+
+3. Need assistance / figure things out
