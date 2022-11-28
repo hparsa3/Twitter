@@ -31,7 +31,15 @@ export default function Input() {
                         <div className="flex items-center justify-between pt-2.5">
                             <div className="flex">
                                 <div className="">
-                                    <PhotographIcon className="h-10 w-10 hoverEffect p-2 text-sky-500 hover:bg-sky-100" />
+                                    <PhotographIcon className="h-10 w-10 hoverEffect p-2 text-sky-500 
+                 <input
+                        type="file"
+                        hidden
+                        ref={filePickerRef}
+                        accept="image/*"
+                        onChange={addImageToPost}
+                      />
+                  </div>
                                 </div>
                                 <EmojiHappyIcon className="h-10 w-10 hoverEffect p-2 text-sky-500 hover:bg-sky-100" />
                             </div>
