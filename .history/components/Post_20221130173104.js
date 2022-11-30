@@ -122,7 +122,7 @@ export default function Post({ post, id }) {
               if (!session) {
                 signIn();
               } else {
-                setPostId(id);
+                setPostId(post.id);
                 setOpen(!open);
               }
             }}
