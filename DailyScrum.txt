@@ -679,3 +679,25 @@ Amir
 
 3. Need assistance / figure things out
 
+
+30-Nov-2022 
+************************************************************************************
+Amir and Ilnaz 
+
+working on react Modal
+
++++++++++++++++++++++++++++++++++++++++++
+Edgar:
+Send comments to thr firestore
+
+
++++++++++++++++++++++++++++++++++++++++++
+Hossein
+Make more update on the post component
+
+
++++++++++++++++++++++++++++++++++++++++++
+Kristy
+Make the comments and reply looks better 
+
+
