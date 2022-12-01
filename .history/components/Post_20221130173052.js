@@ -114,7 +114,7 @@ export default function Post({ post, id }) {
         {post?.data()?.text}
         </p>
         {/* post image */}
-        <img className="rounded-2xl mr-2" src={post?.data()?.image} alt="" />
+        <img className="rounded-2xl mr-2" src={post.data().image} alt="" />
         {/* icons */}
         <div className="flex justify-between text-gray-500 p-2">
         <ChatIcon
@@ -122,7 +122,7 @@ export default function Post({ post, id }) {
               if (!session) {
                 signIn();
               } else {
-                setPostId(id);
+                setPostId(post.id);
                 setOpen(!open);
               }
             }}
