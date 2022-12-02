@@ -7,15 +7,14 @@ import { useEffect, useState } from "react";
 import { db } from "../firebase";
 import { addDoc, collection, doc, onSnapshot, serverTimestamp } from "firebase/firestore";
 import Moment from "react-moment";
-import { useSession } from "next-auth/react";
 import {EmojiHappyIcon, PhotographIcon } from "@heroicons/react/outline";
-
+import { userState } from "../atom/userAtom";
 
 export default function CommentModal() {
   const [open, setOpen] = useRecoilState(modalState);
   const [postId] = useRecoilState(postIdState);
+  const [currentuser] = useRecoilState(userState);
   const [post, setPost] = useState({});
-  const {data: session} = useSession();
   const [input, setInput] = useState("");
   const router = useRouter();
 
@@ -29,11 +28,11 @@ export default function CommentModal() {
   async function sendComment(){
       await addDoc(collection(db, "posts", postId, "comments"), {
         comment: input,
-        name: session.user.name,
-        username: session.user.username,
-        userImg: session.user.image,
+        name: currentuser.name,
+        username: currentuser.username,
+        userImg: currentuser.image,
         timestamp: serverTimestamp(),
-        userId: session.user.uid,
+        userId: currentuser.uid,
       })
 
       setOpen(false);
@@ -69,7 +68,7 @@ export default function CommentModal() {
             <p className="text-gray-500 text-[15px] sm:text-[16px] ml-16 mb-2">{post?.data()?.text}</p>
             <div className="flex border-gray-200 p-3 space-x-3">
             <img
-                src= {session.user.image}
+                src= {currentuser.userImg}
                 alt="user-img"
                 className="h-11 w-11 rounded-full cursor-pointer hover:brightness-95"
             />
