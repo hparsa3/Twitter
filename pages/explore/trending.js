@@ -2,8 +2,12 @@ import Head from 'next/head';
 import Sidebar from "../../components/Sidebar";
 import Widgets from "../../components/Widgets";
 import CommentModal from "../../components/CommentModal";
+import Trending from "../../components/Trending";
+import { ArrowLeftIcon } from '@heroicons/react/solid';
+import { useRouter } from "next/router";
 
-export default function Trending({ newsResults, randomUsersResults } ) {
+export default function trending({ newsResults, randomUsersResults, trendingResults } ) {
+  const router = useRouter();
   return (
     <div>
       <Head>
@@ -16,6 +20,19 @@ export default function Trending({ newsResults, randomUsersResults } ) {
         {/*Sidebar*/}
         <Sidebar/>
         
+        <div className="xl:ml-[370px] border-l border-r border-gray-200  xl:min-w-[576px] sm:ml-[73px] flex-grow max-w-xl">
+      <div className="flex items-center py-2 px-3 sticky top-0 z-50 bg-white border-b border-gray-200">
+      <div className="hoverEffect" onClick={() => router.push("/")}>
+                            <ArrowLeftIcon className="h-5" />
+                        </div>
+        <h2 className="text-lg sm:text-xl font-bold cursor-pointer">
+         Explore</h2>
+         
+      </div>
+      <Trending trendingResults={trendingResults.articles}/>
+    </div>
+  
+
         {/* Widget */}
         <Widgets newsResults={newsResults.articles} 
         randomUsersResults={randomUsersResults.results || null}/>
@@ -27,10 +44,17 @@ export default function Trending({ newsResults, randomUsersResults } ) {
 //https://saurav.tech/NewsAPI/top-headlines/category/business/us.json
 
 export async function getServerSideProps() {
-  const newsResults = await fetch(
-    "https://saurav.tech/NewsAPI/top-headlines/category/business/us.json"
+ 
+
+  const trendingResults = await fetch(
+    "https://saurav.tech/NewsAPI/top-headlines/category/health/in.json"
+    //"https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty"
   ).then((res) => res.json());
 
+  
+ const newsResults = await fetch(
+    "https://saurav.tech/NewsAPI/top-headlines/category/business/us.json"
+  ).then((res) => res.json());
   // Who to follow section
 
   let randomUsersResults = [];
@@ -44,15 +68,12 @@ export async function getServerSideProps() {
   } catch (e) {
     randomUsersResults = [];
   }
-
-  // const randomUsersResults = await fetch(
-  //   "https://randomuser.me/api/?results=30&inc=name,login,picture"
-  // ).then((res) => res.json());
-
+  
   return {
     props: {
       newsResults,
       randomUsersResults,
+      trendingResults,
     },
   };
 }
