@@ -16,20 +16,19 @@ import {
   setDoc,
 } from "firebase/firestore";
 import { db, storage } from "../firebase";
-
+import { signIn, useSession } from "next-auth/react";
 import { useState, useEffect } from "react";
 import { deleteObject, ref } from "firebase/storage";
 import { useRecoilState } from "recoil";
 import { modalState } from "../atom/modalAtom";
 import { modalState, postIdState } from "../atom/modalAtom";
 import { useRouter } from "next/router";
-import { userState } from "../atom/userAtom";
 
 export default function Post({ post, id }) {
- 
+  const { data: session } = useSession();
   const [likes, setLikes] = useState([]);
   const [hasLiked, setHasLiked] = useState(false);
-  const [currentUser] = useRecoilState(userState);
+
   const [open, setOpen] = useRecoilState(modalState);
   const [postId, setPostId] = useRecoilState(postIdState);
   const router = useRouter();
@@ -41,21 +40,22 @@ export default function Post({ post, id }) {
   }, [db]);
 
   useEffect(() => {
-    setHasLiked(likes.findIndex((like) => like.id === currentUser?.uid) !== -1);
-  }, [likes, currentUser]);
+    setHasLiked(
+      likes.findIndex((like) => like.id === session?.user.uid) !== -1
+    );
+  }, [likes]);
 
    async function likePost() {
     if (session) {
-      if (currentUser) {
-        await deleteDoc(doc(db, "posts", id, "likes", currentUser?.uid));
+      if (hasLiked) {
+        await deleteDoc(doc(db, "posts", id, "likes", session?.user.uid));
       } else {
-         await setDoc(doc(db, "posts", id, "likes", currentUser?.uid), {
-          username: currentUser?.username,
+        await setDoc(doc(db, "posts", id, "likes", session?.user.uid), {
+          username: session.user.username,
         });
       }
     } else {
-      // signIn();
-      router.push("/auth/signin");
+      signIn();
     }
   }
 
@@ -98,11 +98,11 @@ export default function Post({ post, id }) {
             {post?.data()?.name}
             </h4>
             <span className="text-sm sm:text-[15px]">
-            @{post?.data()?.username} -{" "}
+              @{post.data().username} -{" "}
             </span>
             <span className="text-sm sm:text-[15px] hover:underline">
           
-            <Moment fromNow>{post?.data()?.timestamp?.toDate()}</Moment>
+              <Moment fromNow>{post?.data().timestamp?.toDate()}</Moment>
             </span>
           </div>
 
@@ -111,19 +111,18 @@ export default function Post({ post, id }) {
         </div>
         {/* post text */}
         <p className="text-gray-800 text-[15px sm:text-[16px] mb-2">
-        {post?.data()?.text}
+          {post.data().text}
         </p>
         {/* post image */}
-        <img className="rounded-2xl mr-2" src={post?.data()?.image} alt="" />
+        <img className="rounded-2xl mr-2" src={post.data().image} alt="" />
         {/* icons */}
         <div className="flex justify-between text-gray-500 p-2">
         <ChatIcon
             onClick={() => {
-              if (!currentUser) {
-                  // signIn();
-                  router.push("/auth/signin");
+              if (!session) {
+                signIn();
               } else {
-                setPostId(id);
+                setPostId(post.id);
                 setOpen(!open);
               }
             }}

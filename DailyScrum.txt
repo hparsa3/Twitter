@@ -133,7 +133,7 @@
 3. Need assistance / figure things out
 
 18-Nov-2022 
-****************************
+************************************************************************************
  Amir
 
 1. Done / not done since last scrum:
@@ -195,3 +195,716 @@
 
 3. Need assistance / figure things out
 
+20-Nov-2022 
+************************************************************************************
+ Amir
+
+1. Done / not done since last scrum:
+
+	- Got news Section running
+
+2. To do until next Scrum:
+	- Try and deploy
+
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Ilnaz 
+
+1. Done / not done since last scrum:
+
+	- put in some random users 
+
+2. To do until next Scrum:
+	- add a like function
+
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Kristy 
+
+1. Done / not done since last scrum:
+
+	- Still need to finish off input  
+
+2. To do until next Scrum:
+	- Try and add signin
+ 
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Hossein 
+
+1. Done / not done since last scrum:
+
+	- modified sidebar and input component
+2. To do until next Scrum:
+	- help out to delpoy
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Edgar
+
+1. Done / not done since last scrum:
+
+	-finished search
+2. To do until next Scrum:
+	- set up auth and firebase/help deploy
+	
+
+3. Need assistance / figure things out
+
+21-Nov-2022 
+************************************************************************************
+ Amir
+
+1. Done / not done since last scrum:
+
+	- Deployed on Vercel
+
+2. To do until next Scrum:
+	- Getting Firebase up and running
+
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Ilnaz 
+
+1. Done / not done since last scrum:
+
+	-  Added widgets section and random users
+
+2. To do until next Scrum:
+	- Adding animaton user framer motion
+
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Kristy 
+
+1. Done / not done since last scrum:
+
+	- Still need to finish off input  
+
+2. To do until next Scrum:
+	- Try and add signin
+ 
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Hossein 
+
+1. Done / not done since last scrum:
+
+	- Changed Navbar and input a bit, deployed to Vercel
+2. To do until next Scrum:
+	- Adding Delete to the post component
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Edgar
+
+1. Done / not done since last scrum:
+
+	- finished search
+2. To do until next Scrum:
+	- still working on setting up auth and firebase
+	
+
+3. Need assistance / figure things out
+
+22-Nov-2022 
+************************************************************************************
+everybody are still strugelling with the previous task:
+
+Edgar: bug in signn in
+Ilnaz: add animation to the post
+Amir: firebase
+Hossein: Delete posts
+Kristy: she is searching toutorials for the side 
+
+23-Nov-2022 
+************************************************************************************
+Amir
+
+1. Done / not done since last scrum:
+
+	- Firebase is ready 
+
+
+2. To do until next Scrum:
+
+		- Add recoil 
+
+
+
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Ilnaz 
+
+1. Done / not done since last scrum:
+
+	-  animation added from framer motion 
+
+2. To do until next Scrum:
+	- start looking at  react model 
+
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Kristy 
+
+1. Done / not done since last scrum:
+
+	- input  finished 
+
+2. To do until next Scrum:
+	- Checking fire store and geting post data
+ 
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Hossein 
+
+1. Done / not done since last scrum:
+
+	- Added delete to the post component
+2. To do until next Scrum:
+	- Start working on the profile page 
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Edgar
+
+1. Done / not done since last scrum:
+
+	- Oauth and firebase set up 
+2. To do until next Scrum:
+	- working on toutorials for rols and components
+	
+	
+
+3. Need assistance / figure things out
+
+
+
+25-Nov-2022 
+************************************************************************************
+Amir
+
+1. Done / not done since last scrum:
+
+- recoil package install 
+
+
+2. To do until next Scrum:
+
+ - Still working on impliement recoil and adjust with the project 
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Ilnaz 
+
+1. Done / not done since last scrum:
+
+-  Watched some  react model toutorials and installed the package
+
+2. To do until next Scrum:
+	
+-Start impliementing react model with project
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Kristy 
+
+1. Done / not done since last scrum:
+
+- Checking fire store and geting post data
+
+2. To do until next Scrum:
+	
+ -Update backend to add some constraint
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Hossein 
+
+1. Done / not done since last scrum:
+
+- Start working on the profile page 
+
+2. To do until next Scrum:
+
+- Finding out how to prevent user to upload file rather than image
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Edgar
+
+1. Done / not done since last scrum:
+
+- watched some toutorials for rols and components
+
+2. To do until next Scrum:
+
+-Working on match comment with orginal post
+
+
+3. Need assistance / figure things out
+
+
+
+
+
+26-Nov-2022 
+************************************************************************************
+Amir
+
+1. Done / not done since last scrum:
+
+- Impliementing recoil partialy done
+
+
+2. To do until next Scrum:
+
+ - Create page modalAtom
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Ilnaz 
+
+1. Done / not done since last scrum:
+
+- react model installed 
+
+2. To do until next Scrum:
+	
+-Create CommentModal
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Kristy 
+
+1. Done / not done since last scrum:
+
+- Required constraints added
+
+2. To do until next Scrum:
+	
+ -Create comment component
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Hossein 
+
+1. Done / not done since last scrum:
+
+-  prevent user to upload file rather than image done
+
+2. To do until next Scrum:
+
+- Update Post.js
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Edgar
+
+1. Done / not done since last scrum:
+
+- Still Working on match comment with orginal post
+
+2. To do until next Scrum:
+
+-Organaizing jira for whole project
+-update index.js
+
+
+3. Need assistance / figure things out
+
+28-Nov-2022 
+************************************************************************************
+Amir
+
+1. Done / not done since last scrum:
+
+- Impliementing recoil done
+
+
+2. To do until next Scrum:
+
+ - finishing page modalAtom
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Ilnaz 
+
+1. Done / not done since last scrum:
+
+-  finished CommentModal
+
+2. To do until next Scrum:
+	
+- Integrating comment modal with the rest of the code
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Kristy 
+
+1. Done / not done since last scrum:
+
+- component added
+
+2. To do until next Scrum:
+	
+ - help create post page
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Hossein 
+
+1. Done / not done since last scrum:
+
+-  Updated Post.js
+
+2. To do until next Scrum:
+
+- help with Post Page
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Edgar
+
+1. Done / not done since last scrum:
+
+- finished Organaizing jira for whole project
+- updated index.js
+
+2. To do until next Scrum:
+
+
+- Still Working on match comment with orginal post
+
+3. Need assistance / figure things out
+
+
+29-Nov-2022 
+************************************************************************************
+Amir
+
+1. Done / not done since last scrum:
+
+- Atom is done
+
+
+2. To do until next Scrum:
+
+ - Debug home page
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Ilnaz 
+
+1. Done / not done since last scrum:
+
+-   CommenModal Integrated
+
+2. To do until next Scrum:
+	
+- help debug
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Kristy 
+
+1. Done / not done since last scrum:
+
+- post page done
+
+2. To do until next Scrum:
+	
+ - debugging
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Hossein 
+
+1. Done / not done since last scrum:
+
+-  Post page done
+
+2. To do until next Scrum:
+
+- debugging
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+ Edgar
+
+1. Done / not done since last scrum:
+
+- matched comment
+
+2. To do until next Scrum:
+
+- debugging as well
+
+3. Need assistance / figure things out
+
+
+30-Nov-2022 
+************************************************************************************
+Amir and Ilnaz 
+
+working on react Modal
+
++++++++++++++++++++++++++++++++++++++++++
+Edgar:
+Send comments to thr firestore
+
+
++++++++++++++++++++++++++++++++++++++++++
+Hossein
+Make more update on the post component
+
+
++++++++++++++++++++++++++++++++++++++++++
+Kristy
+Make the comments and reply looks better 
+
+
+01-Dec-2022 
+************************************************************************************
+
+Amir 
+
+1. Done / not done since last scrum:
+
+React Modal partialy done but still need time 
+
+2. To do until next Scrum:
+
+Also start working on follow  component
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+Ilnaz 
+
+1. Done / not done since last scrum:
+
+React Modal partialy done but still need time 
+
+2. To do until next Scrum:
+
+Also start working on profile component
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+Hossein 
+
+1. Done / not done since last scrum:
+
+Post component done 
+
+2. To do until next Scrum:
+
+Create follower page 
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+Edgar 
+
+1. Done / not done since last scrum:
+
+Post component done  done 
+
+2. To do until next Scrum:
+
+Start working on trending API  
+
+3. Need assistance / figure things out
+
+
++++++++++++++++++++++++++++++++++++++++++
+Kristy 
+
+1. Done / not done since last scrum:
+
+comment and reply fron is done
+
+2. To do until next Scrum:
+
+Update homepage
+
+3. Need assistance / figure things out
+
+
+02-Dec-2022 
+************************************************************************************
+
+Amir 
+
+1. Done / not done since last scrum:
+
+
+
+2. To do until next Scrum:
+
+Still working on follow  component
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+Ilnaz 
+
+1. Done / not done since last scrum:
+
+
+
+2. To do until next Scrum:
+
+Still working on profile component
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+Hossein 
+
+1. Done / not done since last scrum:
+
+
+
+2. To do until next Scrum:
+
+still working on create follower page 
+
+3. Need assistance / figure things out
+
+
++++++++++++++++++++++++++++++++++++++++++
+Edgar 
+
+1. Done / not done since last scrum:
+
+
+
+2. To do until next Scrum:
+
+working on trending API
+
+3. Need assistance / figure things out
+
+
++++++++++++++++++++++++++++++++++++++++++
+Kristy 
+
+1. Done / not done since last scrum:
+
+
+
+2. To do until next Scrum:
+
+workn on making homepage still look more like twitter 
+
+3. Need assistance / figure things out
+
+
+06-Dec-2022 
+************************************************************************************
+
+Amir 
+
+1. Done / not done since last scrum:
+
+finished follow components
+
+2. To do until next Scrum:
+
+Unit Testing
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+Ilnaz 
+
+1. Done / not done since last scrum:
+
+Finshed profile component
+
+2. To do until next Scrum:
+
+touch up profile
+
+3. Need assistance / figure things out
+
++++++++++++++++++++++++++++++++++++++++++
+Hossein 
+
+1. Done / not done since last scrum:
+
+Finish follower components
+
+2. To do until next Scrum:
+
+Unit Testing
+
+3. Need assistance / figure things out
+
+
++++++++++++++++++++++++++++++++++++++++++
+Edgar 
+
+1. Done / not done since last scrum:
+
+ALmost finished Trending Api
+
+2. To do until next Scrum:
+
+working on trending API and messages or search bar
+
+3. Need assistance / figure things out
+
+
++++++++++++++++++++++++++++++++++++++++++
+Kristy 
+
+1. Done / not done since last scrum:
+finished touching up homepage
+
+
+2. To do until next Scrum:
+
+Working on Bookmark
+
+3. Need assistance / figure things out
