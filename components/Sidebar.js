@@ -56,33 +56,6 @@ export default function Sidebar() {
       </div>
       {/* Menu */}
       <div className="mt-4 mb-2.5 xl:items-start">
-<<<<<<< HEAD
-        <SidebarMenuItem text="Home" Icon={HomeIcon} active />
-<<<<<<< HEAD
-        <SidebarMenuItem text="Explore" Icon={HashtagIcon} />
-        <SidebarMenuItem text="Notification" Icon={BellIcon} />
-        <SidebarMenuItem text="Messages" Icon={InboxIcon} />
-        <SidebarMenuItem text="Bookmark" Icon={BookmarkIcon} />
-        <SidebarMenuItem text="Lists" Icon={ClipboardIcon} />
-        <SidebarMenuItem text="Profile" Icon={HomeIcon} />
-        <SidebarMenuItem text="Home" Icon={UserIcon} />
-        <SidebarMenuItem text="More" Icon={DotsCircleHorizontalIcon} />
-=======
-        <div onClick={() => router.push("/explore/trending")}>
-        <SidebarMenuItem  text="Explore" Icon={HashtagIcon} /></div>
-        {currentUser && (
-          <>
-            <SidebarMenuItem text="Notification" Icon={BellIcon} />
-            <SidebarMenuItem text="Messages" Icon={InboxIcon} />
-            <SidebarMenuItem text="Bookmark" Icon={BookmarkIcon} />
-            <SidebarMenuItem text="Lists" Icon={ClipboardIcon} />
-            <SidebarMenuItem text="Profile" Icon={HomeIcon} />
-            <SidebarMenuItem text="Home" Icon={UserIcon} />
-            <SidebarMenuItem text="More" Icon={DotsCircleHorizontalIcon} />
-          </>
-        )}
->>>>>>> f2c2098 (link)
-=======
       <SidebarMenuItem text="Home" Icon={HomeIcon} active />
         <SidebarMenuItem text="Explore" Icon={HashtagIcon} />
         {currentUser && (
@@ -95,7 +68,6 @@ export default function Sidebar() {
             <SidebarMenuItem text="More" Icon={DotsCircleHorizontalIcon} />
           </>
         )}
->>>>>>> 59574808e95bcb7a4cfb00984c4235d744d5c0d8
       </div>
 
       {/* Button */}
